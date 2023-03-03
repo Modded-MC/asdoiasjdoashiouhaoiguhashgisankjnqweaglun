@@ -4,11 +4,13 @@ local function getKeyInput()
     term.write("Key > ");
     local input = read("*");
     if input == "MySuperCoolPassword123" then
+        getKeyInput();
         redstone.setOutput("left", true);
         sleep(2)
         redstone.setOutput("left", false);
     else
         print("Incorrect key, try again.");
+        getKeyInput();
     end;
 end;
 
