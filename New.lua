@@ -5,7 +5,7 @@ function print(printtext)
 end
 
 if key == null then
-    print("There is no key associated with DL1, would you like to set it? (y/n)")
+    print("No key set, set it? y/n")
     local answer = read()
     if answer == "y" then
         print("The process will begin shortly")
