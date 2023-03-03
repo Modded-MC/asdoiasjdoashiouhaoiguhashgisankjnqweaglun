@@ -9,7 +9,7 @@ local function getKeyInput()
         sleep(2)
         redstone.setOutput("left", false);
     else
-        print("Incorrect key, try again.");
+        term.write("Incorrect key, try again.");
         getKeyInput();
     end;
 end;
