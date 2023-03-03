@@ -16,7 +16,6 @@ local function getKeyInput()
             getKeyInput();
         else
             term.write("Entered source key, exiting program.");
-            exit();
         end;
     end;
 end;
