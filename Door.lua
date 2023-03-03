@@ -1,6 +1,6 @@
 local function getKeyInput()
     term.clear();
-    term.setCursorPos(0,0);
+    term.setCursorPos(1,1);
     term.write("Key > ");
     local input = read("*");
     if input == "SpaceDoor..Open*!£" then
