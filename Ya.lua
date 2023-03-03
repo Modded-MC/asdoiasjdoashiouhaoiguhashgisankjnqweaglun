@@ -3,7 +3,7 @@ local function getKeyInput()
     term.setCursorPos(1,1);
     term.write("Key > ");
     local input = read("*");
-    if input == "SpaceDoor..Open*!£" then
+    if input == "MySuperCoolPassword123" then
         redstone.setOutput("left", true);
         sleep(2)
         redstone.setOutput("left", false);
