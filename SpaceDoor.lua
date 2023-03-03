@@ -12,4 +12,4 @@ local function getKeyInput()
     end;
 end;
 
-getPasswordInput();
+getKeyInput();
