@@ -10,7 +10,6 @@ local function getBioS()
         sleep(2)
         term.setCursorPos(1,1);
         term.clear();
-        read("-")
         shell.run(levelos.lua)
     else
         if input ~= "password.dev" then
