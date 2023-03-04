@@ -1,6 +1,6 @@
 local function input(name, hash)
     local isenabled = true
-    if hash then
+    if hash == true then
         local input = read("*")
         while isenabled == true do
             term.clear()
@@ -16,3 +16,5 @@ local function input(name, hash)
         end
     end
 end
+
+input("Username", true)
