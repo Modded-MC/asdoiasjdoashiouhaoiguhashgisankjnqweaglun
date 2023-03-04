@@ -5,7 +5,7 @@ local function getBioS()
     term.setCursorPos(1,1);
     term.write("BioS > ");
     local input = read("*");
-    if input:lower == "device.poweron!" then
+    if input:lower = "device.poweron!" then
         term.write("Powering device on...")
         sleep(2)
         term.setCursorPos(1,1);
