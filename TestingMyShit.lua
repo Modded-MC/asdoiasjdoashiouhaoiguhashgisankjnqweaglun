@@ -17,4 +17,4 @@ local function input(name, hash)
     end
 end
 
-input("Username", true)
+input("Username", true);
