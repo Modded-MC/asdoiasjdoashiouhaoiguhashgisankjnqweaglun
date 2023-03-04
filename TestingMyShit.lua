@@ -1,10 +1,18 @@
-local function inputEnable(reason, temp)
-    if temp == true then
-        print(reason.." ["..temp.."]".." >")
-    else
-        print(reason.." > ")
+local function input(name, hash)
+    local isenabled = true
+    if hash then
+        local input = read("*")
+        while isenabled == true do
+            term.clear()
+            term.setCursorPos(1,1)
+            term.write(name.." >")
+        end
+    else if hash == false then
+        local input = read()
+        while isenabled == true do
+            term.clear()
+            term.setCursorPos(1,1)
+            term.write(name.." >")
+        end
     end
 end
-
-inputEnable("Username", true)
-inputEnable("Password", false)
