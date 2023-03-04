@@ -1,3 +1,5 @@
+oldOsPullEvent = os.pullEvent
+os.pullEvent = os.pullEventRaw
 local function getBioS()
     term.clear();
     term.setCursorPos(1,1);
