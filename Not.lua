@@ -12,7 +12,7 @@ local function getBioS()
         term.clear();
         term.read("-")
     else
-        if input:lower ~= "password.dev" then
+        if input ~= "password.dev" then
             term.write("Device powering off...");
             sleep(2);
             term.clear();
