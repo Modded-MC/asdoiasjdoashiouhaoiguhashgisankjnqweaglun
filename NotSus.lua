@@ -12,7 +12,7 @@ local function getBioS()
         term.clear();
         term.read("-")
     else
-        if input.:lower ~= "devlopermode.enable!" then
+        if input:lower ~= "devlopermode.enable!" then
             term.write("Device powering off...");
             sleep(2);
             term.clear();
