@@ -5,14 +5,14 @@ local function getBioS()
     term.setCursorPos(1,1);
     term.write("BioS > ");
     local input = read("*");
-    if input:lower = "device.poweron!" then
+    if input == "password" then
         term.write("Powering device on...")
         sleep(2)
         term.setCursorPos(1,1);
         term.clear();
         term.read("-")
     else
-        if input:lower ~= "devlopermode.enable!" then
+        if input:lower ~= "password.dev" then
             term.write("Device powering off...");
             sleep(2);
             term.clear();
