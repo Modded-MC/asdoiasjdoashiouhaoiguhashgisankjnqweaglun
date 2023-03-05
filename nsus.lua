@@ -10,7 +10,7 @@ local function getBioS()
         sleep(2)
         term.setCursorPos(1,1);
         term.clear();
-        shell.run("levelos")
+        shell.run("monitor top levelos")
     else
         if input ~= "password.dev" then
             term.write("Device powering off...");
