@@ -1,6 +1,7 @@
 oldOsPullEvent = os.pullEvent
 os.pullEvent = os.pullEventRaw
 local function getBioS()
+    shell.run("monitor top clear");
     term.clear();
     term.setCursorPos(1,1);
     term.write("BioS > ");
